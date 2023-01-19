@@ -6,8 +6,7 @@
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 function squareSum(numbers){
-    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue,
-        initialValue)
+    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue ** 2, 0)
 }
 
 console.log(squareSum([1,2]), 5);
