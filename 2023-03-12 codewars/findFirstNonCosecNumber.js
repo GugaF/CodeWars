@@ -13,7 +13,6 @@
 // Can you write a solution that will return null2 for both [] and [ x ] though? (This is an empty array and one with a single number and is not tested for, 
 // but you can write your own example test. )
 
-
 // P: array of positive or negative numbers in ascending order
 // R: element of the first non consecutive number in an array
 // E: see below
