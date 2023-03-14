@@ -17,9 +17,10 @@
 
 
 // P: an integer
-// R: 
-// E: 
-// P: 
+// R: a list of phrases is given, return the phrase depending on the number passed in the function
+// E: see below
+// P: divide the number of petals by six
+    // the remainder between one and 6 will depict which phrase to return
 
 
 function howMuchILoveYou(nbPetals) {
