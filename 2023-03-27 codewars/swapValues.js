@@ -10,6 +10,9 @@ function swapValues(array) {
     array[0] = array[1]
     array[1] = temp
     return array
+
+    // OR just reverse the array, assuming it stays a two element array.
+    // return array.reverse()
   }
 
 
