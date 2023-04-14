@@ -12,17 +12,17 @@
 // P: integer array and an integer
 // R: cascading elements of the original array where each array's length is the number of the integer passed into the function
 // E: see below
-// P: tkae each element in the array and add the number (passed in ) worth of elements (-1!) and add it to a new array.
+
 
 function eachCons(array, n) {
     let resArray = []
 
     for (let i = 0; i < array.length; i++) {
-        resArray.push(array.slice(i,i+n));
+        // at each i create an internal array that is sliced from i to i + n
+        resArray.push(array.slice(i, i + n));
     }
-    console.log(resArray)
 
-    // filters (returns) only arrays whose length === n
+    // returns only arrays whose length === n
     return resArray.filter(e => e.length === n)
 }
 
