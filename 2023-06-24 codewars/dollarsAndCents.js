@@ -17,10 +17,10 @@
 // Good luck! Your team knows they can count on you!
 
 function formatMoney(amount){
-    return amount.toString().startsWith("$") ? "$" + parseFloat(amount.slice(1,amount.length)).toFixed(2) : `$${amount.toFixed(2)}`
+    return '$' + amount.toFixed(2)
 }
 
 console.log(formatMoney(39.99), '$39.99')
 console.log(formatMoney(40.1), '$40.10')
-console.log(formatMoney("$3"), '$3.00')
-console.log(formatMoney("$2.0"), '$2.00')
+console.log(formatMoney(3), '$3.00')
+console.log(formatMoney(2.0), '$2.00')
