@@ -27,7 +27,7 @@ function maskify(cc) {
 
 // Another way
 // maskify = (cc) => '#'.repeat(Math.max(0, cc.length - 4)) + cc.substr(-4);
-
+ 
 console.log(maskify('4556364607935616'), '############5616');
 console.log(maskify('1'), '1');
 console.log(maskify('11111'), '#1111');
