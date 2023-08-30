@@ -13,7 +13,7 @@
 
 
 function squareDigits(num) {
-    return Number(String(num).split('').map(Number).map(x => x ** 2).join(''));
+    return Number(String(num).split('').map(x => x ** 2).join(''));
 }
 
 console.log(squareDigits(3212), 9414);
