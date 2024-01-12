@@ -33,17 +33,25 @@
 // Can the story I heard about man flying in his lawn chair equipped with 1000 balloons be true?
 // Your coding mastery will reveal answers to these and many other important questions in the tests. Let the journey begin!
 
-class Journey{
-    constructor(object, crew, balloons) {
-        this.object = object;
-        this.crew = crew;
-        this.balloons = balloons;
-        this.totalWeight = object["weight"] + (this.crew * 80);
-        this.lift = this.balloons * 0.0048;
-    }
+// First Try!
+// class Journey{
+//     constructor(object, crew, balloons) {
+//         this.object = object;
+//         this.crew = crew;
+//         this.balloons = balloons;
+//         this.totalWeight = object["weight"] + (this.crew * 80);
+//         this.lift = this.balloons * 0.0048;
+//     }
 
-    isPossible = function() {
-        return this.lift > this.totalWeight;
+//     isPossible = function() {
+//         return this.lift > this.totalWeight;
+//     }
+// }
+
+// Refactored
+function Journey(object, crew, balloons) {
+    this.isPossible = function() {
+        return (object.weight + crew * 80) <= (balloons * 0.0048);
     }
 }
 
