@@ -77,12 +77,11 @@ var Harshad = ( function() {
        * @returns {Array}
        * @function Harshad.getSerie
        */
-      getSerie: function( count, start ) {
+      getSerie: function( count, start = 0) {
         let series = [];
-        let next = start;
         for (let i = 0; i < count; i++) {
-          next = Harshad.getNext(next);
-          series.push(next);
+          start = Harshad.getNext(start);
+          series.push(start);
         }
         return series;
       }
