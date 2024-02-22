@@ -15,11 +15,12 @@
 //     Output string must be two numbers separated by a single space, and highest number is first.
 
 function highAndLow(numbers){
-    return numbers    
+    numbers = numbers.split(' ')
+    return Math.max(...numbers) + " " + Math.min(...numbers)
 }
 
 console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"), "42 -9");
-console.lgo(highAndLow("1 2 3"), "3 1");
+console.log(highAndLow("1 2 3"), "3 1");
 console.log(highAndLow("1 2 3 4 5"), "5 1");
 console.log(highAndLow("1 2 -3 4 5"), "5 -3");
 console.log(highAndLow("1 9 3 4 -5"), "9 -5");
